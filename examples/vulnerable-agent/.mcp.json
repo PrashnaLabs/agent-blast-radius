@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "issues": {
+      "command": "npx",
+      "args": ["-y", "@acme/mcp-issue-tracker"],
+      "env": { "ISSUES_TOKEN": "${ISSUES_TOKEN}" }
+    },
+    "postgres": {
+      "command": "npx",
+      "args": ["-y", "@acme/mcp-postgres@0.6.2", "postgresql://admin:hunter2@prod-db:5432/app"]
+    }
+  }
+}
