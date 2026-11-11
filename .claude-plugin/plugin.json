@@ -1,0 +1,12 @@
+{
+  "name": "agent-blast-radius",
+  "version": "0.2.0",
+  "description": "Check your AI agent for vulnerabilities before it goes into an air-gapped environment: boundary crossings plus the blast radius inside the enclave.",
+  "author": {
+    "name": "PrashnaLabs"
+  },
+  "homepage": "https://github.com/PrashnaLabs/agent-blast-radius",
+  "repository": "https://github.com/PrashnaLabs/agent-blast-radius",
+  "license": "Apache-2.0",
+  "keywords": ["security", "air-gapped", "agents", "audit", "mcp", "owasp", "least-privilege"]
+}
