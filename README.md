@@ -52,10 +52,32 @@ dimension, a detect-and-recover section, and a list of what static reading canno
 
 ## Install
 
+### Claude Code (plugin)
+
+Inside Claude Code 2.1.275 or later:
+
+```
+/plugin install agent-blast-radius --marketplace PrashnaLabs/agent-blast-radius
+```
+
+On older versions, add the marketplace first, then install:
+
+```
+/plugin marketplace add PrashnaLabs/agent-blast-radius
+/plugin install agent-blast-radius@prashnalabs
+```
+
+The repository is private for now. Installing needs read access to it, and Claude Code clones it with your
+existing git credentials, so make sure `git clone git@github.com:PrashnaLabs/agent-blast-radius.git`
+works for you first (SSH key, or `gh auth login`). If background updates cannot reach it, export a
+`GITHUB_TOKEN` with read access.
+
+### Any Agent Skills host (manual)
+
 Copy the skill folder into your agent's skills directory.
 
 ```bash
-git clone <this repo> agent-blast-radius
+git clone git@github.com:PrashnaLabs/agent-blast-radius.git
 cp -r agent-blast-radius/skills/agent-blast-radius ~/.claude/skills/          # all projects
 # or: cp -r agent-blast-radius/skills/agent-blast-radius <your-repo>/.claude/skills/
 ```
